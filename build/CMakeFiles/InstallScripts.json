@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/aarav/CP/build/cmake_install.cmake",
+		"/home/aarav/CP/build/shared/cmake_install.cmake",
+		"/home/aarav/CP/build/sender/cmake_install.cmake",
+		"/home/aarav/CP/build/receiver/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

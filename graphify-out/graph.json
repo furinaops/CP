@@ -1,0 +1,1590 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "cp_protocol_architecture",
+        "label": "CP Protocol Architecture",
+        "nodes": [
+          "cp_server_cpserver",
+          "cp_sender_node_cpsendernode",
+          "cp_receiver_node_cpreceivernode"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.95,
+        "source_file": "CMakeLists.txt"
+      },
+      {
+        "id": "distributed_session_flow",
+        "label": "Distributed Session Flow",
+        "nodes": [
+          "cp_session_cpsession",
+          "cp_packet_cppacket",
+          "cp_types_dialoguerole"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "shared/cp_session.cpp"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "cp_types.hpp",
+      "file_type": "code",
+      "source_file": "shared/cp_types.hpp",
+      "source_location": "L1",
+      "id": "shared_cp_types_hpp",
+      "community": 11,
+      "norm_label": "cp_types.hpp"
+    },
+    {
+      "label": "cp_packet.hpp",
+      "file_type": "code",
+      "source_file": "shared/cp_packet.hpp",
+      "source_location": "L1",
+      "id": "shared_cp_packet_hpp",
+      "community": 12,
+      "norm_label": "cp_packet.hpp"
+    },
+    {
+      "label": "cp_packet.cpp",
+      "file_type": "code",
+      "source_file": "shared/cp_packet.cpp",
+      "source_location": "L1",
+      "id": "shared_cp_packet_cpp",
+      "community": 4,
+      "norm_label": "cp_packet.cpp"
+    },
+    {
+      "label": "init_crc32()",
+      "file_type": "code",
+      "source_file": "shared/cp_packet.cpp",
+      "source_location": "L9",
+      "id": "shared_cp_packet_init_crc32",
+      "community": 4,
+      "norm_label": "init_crc32()"
+    },
+    {
+      "label": "computeCRC32()",
+      "file_type": "code",
+      "source_file": "shared/cp_packet.cpp",
+      "source_location": "L21",
+      "id": "shared_cp_packet_computecrc32",
+      "community": 4,
+      "norm_label": "computecrc32()"
+    },
+    {
+      "label": "serialize()",
+      "file_type": "code",
+      "source_file": "shared/cp_packet.cpp",
+      "source_location": "L29",
+      "id": "shared_cp_packet_serialize",
+      "community": 4,
+      "norm_label": "serialize()"
+    },
+    {
+      "label": "deserialize()",
+      "file_type": "code",
+      "source_file": "shared/cp_packet.cpp",
+      "source_location": "L61",
+      "id": "shared_cp_packet_deserialize",
+      "community": 4,
+      "norm_label": "deserialize()"
+    },
+    {
+      "label": "getTriggerWord()",
+      "file_type": "code",
+      "source_file": "shared/cp_packet.cpp",
+      "source_location": "L92",
+      "id": "shared_cp_packet_gettriggerword",
+      "community": 4,
+      "norm_label": "gettriggerword()"
+    },
+    {
+      "label": "cp_session.hpp",
+      "file_type": "code",
+      "source_file": "shared/cp_session.hpp",
+      "source_location": "L1",
+      "id": "shared_cp_session_hpp",
+      "community": 8,
+      "norm_label": "cp_session.hpp"
+    },
+    {
+      "label": "CPSession",
+      "file_type": "code",
+      "source_file": "shared/cp_session.hpp",
+      "source_location": "L6",
+      "id": "shared_cp_session_cpsession",
+      "community": 8,
+      "norm_label": "cpsession"
+    },
+    {
+      "label": "cp_session.cpp",
+      "file_type": "code",
+      "source_file": "shared/cp_session.cpp",
+      "source_location": "L1",
+      "id": "shared_cp_session_cpp",
+      "community": 6,
+      "norm_label": "cp_session.cpp"
+    },
+    {
+      "label": "reset()",
+      "file_type": "code",
+      "source_file": "shared/cp_session.cpp",
+      "source_location": "L3",
+      "id": "shared_cp_session_reset",
+      "community": 6,
+      "norm_label": "reset()"
+    },
+    {
+      "label": "processIncoming()",
+      "file_type": "code",
+      "source_file": "shared/cp_session.cpp",
+      "source_location": "L12",
+      "id": "shared_cp_session_processincoming",
+      "community": 6,
+      "norm_label": "processincoming()"
+    },
+    {
+      "label": "abort()",
+      "file_type": "code",
+      "source_file": "shared/cp_session.cpp",
+      "source_location": "L59",
+      "id": "shared_cp_session_abort",
+      "community": 6,
+      "norm_label": "abort()"
+    },
+    {
+      "label": "cp_crypto.hpp",
+      "file_type": "code",
+      "source_file": "shared/cp_crypto.hpp",
+      "source_location": "L1",
+      "id": "shared_cp_crypto_hpp",
+      "community": 13,
+      "norm_label": "cp_crypto.hpp"
+    },
+    {
+      "label": "cp_crypto.cpp",
+      "file_type": "code",
+      "source_file": "shared/cp_crypto.cpp",
+      "source_location": "L1",
+      "id": "shared_cp_crypto_cpp",
+      "community": 5,
+      "norm_label": "cp_crypto.cpp"
+    },
+    {
+      "label": "generateLoginKey()",
+      "file_type": "code",
+      "source_file": "shared/cp_crypto.cpp",
+      "source_location": "L10",
+      "id": "shared_cp_crypto_generateloginkey",
+      "community": 5,
+      "norm_label": "generateloginkey()"
+    },
+    {
+      "label": "generateSessionKey()",
+      "file_type": "code",
+      "source_file": "shared/cp_crypto.cpp",
+      "source_location": "L20",
+      "id": "shared_cp_crypto_generatesessionkey",
+      "community": 5,
+      "norm_label": "generatesessionkey()"
+    },
+    {
+      "label": "computeEchoToken()",
+      "file_type": "code",
+      "source_file": "shared/cp_crypto.cpp",
+      "source_location": "L49",
+      "id": "shared_cp_crypto_computeechotoken",
+      "community": 5,
+      "norm_label": "computeechotoken()"
+    },
+    {
+      "label": "bytesToHex()",
+      "file_type": "code",
+      "source_file": "shared/cp_crypto.cpp",
+      "source_location": "L65",
+      "id": "shared_cp_crypto_bytestohex",
+      "community": 5,
+      "norm_label": "bytestohex()"
+    },
+    {
+      "label": "hexToBytes()",
+      "file_type": "code",
+      "source_file": "shared/cp_crypto.cpp",
+      "source_location": "L72",
+      "id": "shared_cp_crypto_hextobytes",
+      "community": 5,
+      "norm_label": "hextobytes()"
+    },
+    {
+      "label": "cp_config.hpp",
+      "file_type": "code",
+      "source_file": "shared/cp_config.hpp",
+      "source_location": "L1",
+      "id": "shared_cp_config_hpp",
+      "community": 14,
+      "norm_label": "cp_config.hpp"
+    },
+    {
+      "label": "cp_config.cpp",
+      "file_type": "code",
+      "source_file": "shared/cp_config.cpp",
+      "source_location": "L1",
+      "id": "shared_cp_config_cpp",
+      "community": 7,
+      "norm_label": "cp_config.cpp"
+    },
+    {
+      "label": "trim()",
+      "file_type": "code",
+      "source_file": "shared/cp_config.cpp",
+      "source_location": "L8",
+      "id": "shared_cp_config_trim",
+      "community": 7,
+      "norm_label": "trim()"
+    },
+    {
+      "label": "loadFromFile()",
+      "file_type": "code",
+      "source_file": "shared/cp_config.cpp",
+      "source_location": "L15",
+      "id": "shared_cp_config_loadfromfile",
+      "community": 7,
+      "norm_label": "loadfromfile()"
+    },
+    {
+      "label": "cp_server.hpp",
+      "file_type": "code",
+      "source_file": "sender/cp_server.hpp",
+      "source_location": "L1",
+      "id": "sender_cp_server_hpp",
+      "community": 0,
+      "norm_label": "cp_server.hpp"
+    },
+    {
+      "label": "CPServer()",
+      "file_type": "code",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L13",
+      "id": "sender_cp_server_cpserver",
+      "community": 0,
+      "norm_label": "cpserver()"
+    },
+    {
+      "label": "cp_server.cpp",
+      "file_type": "code",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L1",
+      "id": "sender_cp_server_cpp",
+      "community": 0,
+      "norm_label": "cp_server.cpp"
+    },
+    {
+      "label": "start()",
+      "file_type": "code",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L21",
+      "id": "sender_cp_server_start",
+      "community": 0,
+      "norm_label": "start()"
+    },
+    {
+      "label": "stop()",
+      "file_type": "code",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L40",
+      "id": "sender_cp_server_stop",
+      "community": 0,
+      "norm_label": "stop()"
+    },
+    {
+      "label": "waitForAllReceivers()",
+      "file_type": "code",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L46",
+      "id": "sender_cp_server_waitforallreceivers",
+      "community": 0,
+      "norm_label": "waitforallreceivers()"
+    },
+    {
+      "label": "eventLoop()",
+      "file_type": "code",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L51",
+      "id": "sender_cp_server_eventloop",
+      "community": 0,
+      "norm_label": "eventloop()"
+    },
+    {
+      "label": "handleNewConnection()",
+      "file_type": "code",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L83",
+      "id": "sender_cp_server_handlenewconnection",
+      "community": 0,
+      "norm_label": "handlenewconnection()"
+    },
+    {
+      "label": "handleClientData()",
+      "file_type": "code",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L106",
+      "id": "sender_cp_server_handleclientdata",
+      "community": 0,
+      "norm_label": "handleclientdata()"
+    },
+    {
+      "label": "processPacket()",
+      "file_type": "code",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L122",
+      "id": "sender_cp_server_processpacket",
+      "community": 0,
+      "norm_label": "processpacket()"
+    },
+    {
+      "label": "sendToAgent()",
+      "file_type": "code",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L275",
+      "id": "sender_cp_server_sendtoagent",
+      "community": 0,
+      "norm_label": "sendtoagent()"
+    },
+    {
+      "label": "sendToSession()",
+      "file_type": "code",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L282",
+      "id": "sender_cp_server_sendtosession",
+      "community": 0,
+      "norm_label": "sendtosession()"
+    },
+    {
+      "label": "checkTimers()",
+      "file_type": "code",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L291",
+      "id": "sender_cp_server_checktimers",
+      "community": 0,
+      "norm_label": "checktimers()"
+    },
+    {
+      "label": "abortSession()",
+      "file_type": "code",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L318",
+      "id": "sender_cp_server_abortsession",
+      "community": 0,
+      "norm_label": "abortsession()"
+    },
+    {
+      "label": "cp_sender_node.hpp",
+      "file_type": "code",
+      "source_file": "sender/cp_sender_node.hpp",
+      "source_location": "L1",
+      "id": "sender_cp_sender_node_hpp",
+      "community": 3,
+      "norm_label": "cp_sender_node.hpp"
+    },
+    {
+      "label": "CPSenderNode()",
+      "file_type": "code",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L13",
+      "id": "sender_cp_sender_node_cpsendernode",
+      "community": 3,
+      "norm_label": "cpsendernode()"
+    },
+    {
+      "label": "cp_sender_node.cpp",
+      "file_type": "code",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L1",
+      "id": "sender_cp_sender_node_cpp",
+      "community": 3,
+      "norm_label": "cp_sender_node.cpp"
+    },
+    {
+      "label": "connect()",
+      "file_type": "code",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L17",
+      "id": "sender_cp_sender_node_connect",
+      "community": 3,
+      "norm_label": "connect()"
+    },
+    {
+      "label": "disconnect()",
+      "file_type": "code",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L57",
+      "id": "sender_cp_sender_node_disconnect",
+      "community": 3,
+      "norm_label": "disconnect()"
+    },
+    {
+      "label": "isConnected()",
+      "file_type": "code",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L64",
+      "id": "sender_cp_sender_node_isconnected",
+      "community": 3,
+      "norm_label": "isconnected()"
+    },
+    {
+      "label": "send()",
+      "file_type": "code",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L66",
+      "id": "sender_cp_sender_node_send",
+      "community": 3,
+      "norm_label": "send()"
+    },
+    {
+      "label": "heartbeatLoop()",
+      "file_type": "code",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L88",
+      "id": "sender_cp_sender_node_heartbeatloop",
+      "community": 3,
+      "norm_label": "heartbeatloop()"
+    },
+    {
+      "label": "main.cpp",
+      "file_type": "code",
+      "source_file": "sender/main.cpp",
+      "source_location": "L1",
+      "id": "sender_main_cpp",
+      "community": 9,
+      "norm_label": "main.cpp"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "sender/main.cpp",
+      "source_location": "L9",
+      "id": "sender_main_main",
+      "community": 9,
+      "norm_label": "main()"
+    },
+    {
+      "label": "cp_receiver_node.hpp",
+      "file_type": "code",
+      "source_file": "receiver/cp_receiver_node.hpp",
+      "source_location": "L1",
+      "id": "receiver_cp_receiver_node_hpp",
+      "community": 2,
+      "norm_label": "cp_receiver_node.hpp"
+    },
+    {
+      "label": "CPReceiverNode()",
+      "file_type": "code",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L14",
+      "id": "receiver_cp_receiver_node_cpreceivernode",
+      "community": 2,
+      "norm_label": "cpreceivernode()"
+    },
+    {
+      "label": "cp_receiver_node.cpp",
+      "file_type": "code",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L1",
+      "id": "receiver_cp_receiver_node_cpp",
+      "community": 2,
+      "norm_label": "cp_receiver_node.cpp"
+    },
+    {
+      "label": "connect()",
+      "file_type": "code",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L19",
+      "id": "receiver_cp_receiver_node_connect",
+      "community": 2,
+      "norm_label": "connect()"
+    },
+    {
+      "label": "disconnect()",
+      "file_type": "code",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L63",
+      "id": "receiver_cp_receiver_node_disconnect",
+      "community": 2,
+      "norm_label": "disconnect()"
+    },
+    {
+      "label": "registerTrigger()",
+      "file_type": "code",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L70",
+      "id": "receiver_cp_receiver_node_registertrigger",
+      "community": 2,
+      "norm_label": "registertrigger()"
+    },
+    {
+      "label": "heartbeatLoop()",
+      "file_type": "code",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L74",
+      "id": "receiver_cp_receiver_node_heartbeatloop",
+      "community": 2,
+      "norm_label": "heartbeatloop()"
+    },
+    {
+      "label": "sendPacket()",
+      "file_type": "code",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L88",
+      "id": "receiver_cp_receiver_node_sendpacket",
+      "community": 2,
+      "norm_label": "sendpacket()"
+    },
+    {
+      "label": "run()",
+      "file_type": "code",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L93",
+      "id": "receiver_cp_receiver_node_run",
+      "community": 2,
+      "norm_label": "run()"
+    },
+    {
+      "label": "main.cpp",
+      "file_type": "code",
+      "source_file": "receiver/main.cpp",
+      "source_location": "L1",
+      "id": "receiver_main_cpp",
+      "community": 10,
+      "norm_label": "main.cpp"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "receiver/main.cpp",
+      "source_location": "L6",
+      "id": "receiver_main_main",
+      "community": 10,
+      "norm_label": "main()"
+    },
+    {
+      "label": "DialogueRole",
+      "file_type": "code",
+      "source_file": "shared/cp_types.hpp",
+      "source_location": {
+        "line": 4,
+        "column": 12
+      },
+      "id": "cp_types_dialoguerole",
+      "community": 1,
+      "norm_label": "dialoguerole"
+    },
+    {
+      "label": "SessionState",
+      "file_type": "code",
+      "source_file": "shared/cp_types.hpp",
+      "source_location": {
+        "line": 25,
+        "column": 12
+      },
+      "id": "cp_types_sessionstate",
+      "community": 1,
+      "norm_label": "sessionstate"
+    },
+    {
+      "label": "CPPacket",
+      "file_type": "code",
+      "source_file": "shared/cp_packet.hpp",
+      "source_location": {
+        "line": 8,
+        "column": 8
+      },
+      "id": "cp_packet_cppacket",
+      "community": 1,
+      "norm_label": "cppacket"
+    },
+    {
+      "label": "CPSession",
+      "file_type": "code",
+      "source_file": "shared/cp_session.hpp",
+      "source_location": {
+        "line": 6,
+        "column": 7
+      },
+      "rationale": "Centralized state machine to ensure protocol transition validity across distributed agents.",
+      "id": "cp_session_cpsession",
+      "community": 1,
+      "norm_label": "cpsession"
+    },
+    {
+      "label": "CPCrypto",
+      "file_type": "code",
+      "source_file": "shared/cp_crypto.hpp",
+      "source_location": {
+        "line": 6,
+        "column": 10
+      },
+      "id": "cp_crypto_cpcrypto",
+      "community": 1,
+      "norm_label": "cpcrypto"
+    },
+    {
+      "label": "CPConfig",
+      "file_type": "code",
+      "source_file": "shared/cp_config.hpp",
+      "source_location": {
+        "line": 13,
+        "column": 8
+      },
+      "id": "cp_config_cpconfig",
+      "community": 15,
+      "norm_label": "cpconfig"
+    },
+    {
+      "label": "CPServer",
+      "file_type": "code",
+      "source_file": "sender/cp_server.hpp",
+      "source_location": {
+        "line": 23,
+        "column": 7
+      },
+      "id": "cp_server_cpserver",
+      "community": 1,
+      "norm_label": "cpserver"
+    },
+    {
+      "label": "CPSenderNode",
+      "file_type": "code",
+      "source_file": "sender/cp_sender_node.hpp",
+      "source_location": {
+        "line": 9,
+        "column": 7
+      },
+      "id": "cp_sender_node_cpsendernode",
+      "community": 1,
+      "norm_label": "cpsendernode"
+    },
+    {
+      "label": "CPReceiverNode",
+      "file_type": "code",
+      "source_file": "receiver/cp_receiver_node.hpp",
+      "source_location": {
+        "line": 11,
+        "column": 7
+      },
+      "id": "cp_receiver_node_cpreceivernode",
+      "community": 1,
+      "norm_label": "cpreceivernode"
+    },
+    {
+      "label": "Sender Main",
+      "file_type": "code",
+      "source_file": "sender/main.cpp",
+      "source_location": {
+        "line": 8,
+        "column": 5
+      },
+      "id": "main_sender_main",
+      "community": 1,
+      "norm_label": "sender main"
+    },
+    {
+      "label": "Receiver Main",
+      "file_type": "code",
+      "source_file": "receiver/main.cpp",
+      "source_location": {
+        "line": 6,
+        "column": 5
+      },
+      "id": "main_receiver_main",
+      "community": 1,
+      "norm_label": "receiver main"
+    },
+    {
+      "label": "Integrity Echo Mechanism",
+      "file_type": "rationale",
+      "source_file": "shared/cp_crypto.cpp",
+      "rationale": "Ensures distributed session state consistency and key agreement without exposing the session key.",
+      "id": "integrity_echo_mechanism",
+      "community": 16,
+      "norm_label": "integrity echo mechanism"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_packet.cpp",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "shared_cp_packet_cpp",
+      "target": "shared_cp_packet_init_crc32",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_packet.cpp",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "shared_cp_packet_cpp",
+      "target": "shared_cp_packet_computecrc32",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_packet.cpp",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "shared_cp_packet_cpp",
+      "target": "shared_cp_packet_serialize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_packet.cpp",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "shared_cp_packet_cpp",
+      "target": "shared_cp_packet_deserialize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_packet.cpp",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "shared_cp_packet_cpp",
+      "target": "shared_cp_packet_gettriggerword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_packet.cpp",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "shared_cp_packet_computecrc32",
+      "target": "shared_cp_packet_init_crc32",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_packet.cpp",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "shared_cp_packet_serialize",
+      "target": "shared_cp_packet_computecrc32",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_session.hpp",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "shared_cp_session_hpp",
+      "target": "shared_cp_session_cpsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_session.cpp",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "shared_cp_session_cpp",
+      "target": "shared_cp_session_reset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_session.cpp",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "shared_cp_session_cpp",
+      "target": "shared_cp_session_processincoming",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_session.cpp",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "shared_cp_session_cpp",
+      "target": "shared_cp_session_abort",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_crypto.cpp",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "shared_cp_crypto_cpp",
+      "target": "shared_cp_crypto_generateloginkey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_crypto.cpp",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "shared_cp_crypto_cpp",
+      "target": "shared_cp_crypto_generatesessionkey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_crypto.cpp",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "shared_cp_crypto_cpp",
+      "target": "shared_cp_crypto_computeechotoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_crypto.cpp",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "shared_cp_crypto_cpp",
+      "target": "shared_cp_crypto_bytestohex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_crypto.cpp",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "shared_cp_crypto_cpp",
+      "target": "shared_cp_crypto_hextobytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_config.cpp",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "shared_cp_config_cpp",
+      "target": "shared_cp_config_trim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_config.cpp",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "shared_cp_config_cpp",
+      "target": "shared_cp_config_loadfromfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/cp_config.cpp",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "shared_cp_config_loadfromfile",
+      "target": "shared_cp_config_trim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.hpp",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "sender_cp_server_hpp",
+      "target": "sender_cp_server_cpserver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "sender_cp_server_cpp",
+      "target": "sender_cp_server_cpserver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "sender_cp_server_cpserver",
+      "target": "sender_cp_server_stop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "sender_cp_server_cpp",
+      "target": "sender_cp_server_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "sender_cp_server_cpp",
+      "target": "sender_cp_server_stop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "sender_cp_server_cpp",
+      "target": "sender_cp_server_waitforallreceivers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "sender_cp_server_cpp",
+      "target": "sender_cp_server_eventloop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "sender_cp_server_cpp",
+      "target": "sender_cp_server_handlenewconnection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "sender_cp_server_cpp",
+      "target": "sender_cp_server_handleclientdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "sender_cp_server_cpp",
+      "target": "sender_cp_server_processpacket",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L275",
+      "weight": 1.0,
+      "source": "sender_cp_server_cpp",
+      "target": "sender_cp_server_sendtoagent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L282",
+      "weight": 1.0,
+      "source": "sender_cp_server_cpp",
+      "target": "sender_cp_server_sendtosession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L291",
+      "weight": 1.0,
+      "source": "sender_cp_server_cpp",
+      "target": "sender_cp_server_checktimers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L318",
+      "weight": 1.0,
+      "source": "sender_cp_server_cpp",
+      "target": "sender_cp_server_abortsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "sender_cp_server_eventloop",
+      "target": "sender_cp_server_handlenewconnection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "sender_cp_server_eventloop",
+      "target": "sender_cp_server_handleclientdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "sender_cp_server_eventloop",
+      "target": "sender_cp_server_checktimers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "sender_cp_server_handleclientdata",
+      "target": "sender_cp_server_processpacket",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L209",
+      "weight": 1.0,
+      "source": "sender_cp_server_processpacket",
+      "target": "sender_cp_server_sendtoagent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "sender_cp_server_processpacket",
+      "target": "sender_cp_server_abortsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L272",
+      "weight": 1.0,
+      "source": "sender_cp_server_processpacket",
+      "target": "sender_cp_server_sendtosession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "sender_cp_server_processpacket",
+      "target": "sender_cp_sender_node_send"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L288",
+      "weight": 1.0,
+      "source": "sender_cp_server_sendtosession",
+      "target": "sender_cp_server_sendtoagent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L309",
+      "weight": 1.0,
+      "source": "sender_cp_server_checktimers",
+      "target": "sender_cp_server_sendtoagent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L279",
+      "weight": 1.0,
+      "source": "sender_cp_server_sendtoagent",
+      "target": "sender_cp_sender_node_send"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L323",
+      "weight": 1.0,
+      "source": "sender_cp_server_abortsession",
+      "target": "sender_cp_server_sendtosession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_server.cpp",
+      "source_location": "L298",
+      "weight": 1.0,
+      "source": "sender_cp_server_checktimers",
+      "target": "sender_cp_server_abortsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_sender_node.hpp",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "sender_cp_sender_node_hpp",
+      "target": "sender_cp_sender_node_cpsendernode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "sender_cp_sender_node_cpp",
+      "target": "sender_cp_sender_node_cpsendernode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "sender_cp_sender_node_cpsendernode",
+      "target": "sender_cp_sender_node_disconnect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "sender_cp_sender_node_cpp",
+      "target": "sender_cp_sender_node_connect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "sender_cp_sender_node_cpp",
+      "target": "sender_cp_sender_node_disconnect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "sender_cp_sender_node_cpp",
+      "target": "sender_cp_sender_node_isconnected",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "sender_cp_sender_node_cpp",
+      "target": "sender_cp_sender_node_send",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "sender_cp_sender_node_cpp",
+      "target": "sender_cp_sender_node_heartbeatloop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "sender_cp_sender_node_connect",
+      "target": "sender_cp_sender_node_send",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "sender_cp_sender_node_send",
+      "target": "sender_cp_sender_node_isconnected",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/cp_sender_node.cpp",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "sender_cp_sender_node_heartbeatloop",
+      "target": "sender_cp_sender_node_send",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "receiver_cp_receiver_node_connect",
+      "target": "sender_cp_sender_node_send"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "receiver_cp_receiver_node_heartbeatloop",
+      "target": "sender_cp_sender_node_send"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "receiver_cp_receiver_node_sendpacket",
+      "target": "sender_cp_sender_node_send"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sender/main.cpp",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "sender_main_cpp",
+      "target": "sender_main_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "receiver/cp_receiver_node.hpp",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "receiver_cp_receiver_node_hpp",
+      "target": "receiver_cp_receiver_node_cpreceivernode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "receiver_cp_receiver_node_cpp",
+      "target": "receiver_cp_receiver_node_cpreceivernode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "receiver_cp_receiver_node_cpreceivernode",
+      "target": "receiver_cp_receiver_node_disconnect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "receiver_cp_receiver_node_cpp",
+      "target": "receiver_cp_receiver_node_connect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "receiver_cp_receiver_node_cpp",
+      "target": "receiver_cp_receiver_node_disconnect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "receiver_cp_receiver_node_cpp",
+      "target": "receiver_cp_receiver_node_registertrigger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "receiver_cp_receiver_node_cpp",
+      "target": "receiver_cp_receiver_node_heartbeatloop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "receiver_cp_receiver_node_cpp",
+      "target": "receiver_cp_receiver_node_sendpacket",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "receiver_cp_receiver_node_cpp",
+      "target": "receiver_cp_receiver_node_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "receiver_cp_receiver_node_run",
+      "target": "receiver_cp_receiver_node_sendpacket",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "receiver/main.cpp",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "receiver_main_cpp",
+      "target": "receiver_main_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/cp_packet.hpp",
+      "source": "cp_packet_cppacket",
+      "target": "cp_types_dialoguerole"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/cp_session.hpp",
+      "source": "cp_session_cpsession",
+      "target": "cp_types_dialoguerole"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "shared/cp_types.hpp",
+      "source": "cp_types_dialoguerole",
+      "target": "cp_types_sessionstate"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sender/cp_server.cpp",
+      "source": "cp_server_cpserver",
+      "target": "cp_packet_cppacket"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sender/cp_sender_node.hpp",
+      "source": "cp_sender_node_cpsendernode",
+      "target": "cp_session_cpsession"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "receiver/cp_receiver_node.hpp",
+      "source": "cp_receiver_node_cpreceivernode",
+      "target": "cp_session_cpsession"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sender/cp_server.cpp",
+      "source": "cp_server_cpserver",
+      "target": "cp_crypto_cpcrypto"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "receiver/cp_receiver_node.cpp",
+      "source": "cp_receiver_node_cpreceivernode",
+      "target": "cp_crypto_cpcrypto"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sender/main.cpp",
+      "source": "main_sender_main",
+      "target": "cp_server_cpserver"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "sender/cp_server.hpp",
+      "source": "cp_server_cpserver",
+      "target": "cp_receiver_node_cpreceivernode"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sender/main.cpp",
+      "source": "main_sender_main",
+      "target": "cp_sender_node_cpsendernode"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "receiver/main.cpp",
+      "source": "main_receiver_main",
+      "target": "cp_receiver_node_cpreceivernode"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "cp_protocol_architecture",
+      "label": "CP Protocol Architecture",
+      "nodes": [
+        "cp_server_cpserver",
+        "cp_sender_node_cpsendernode",
+        "cp_receiver_node_cpreceivernode"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CMakeLists.txt"
+    },
+    {
+      "id": "distributed_session_flow",
+      "label": "Distributed Session Flow",
+      "nodes": [
+        "cp_session_cpsession",
+        "cp_packet_cppacket",
+        "cp_types_dialoguerole"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "shared/cp_session.cpp"
+    }
+  ]
+}

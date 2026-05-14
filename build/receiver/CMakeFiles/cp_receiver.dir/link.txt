@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Wpedantic -Wl,--dependency-file=CMakeFiles/cp_receiver.dir/link.d CMakeFiles/cp_receiver.dir/main.cpp.o CMakeFiles/cp_receiver.dir/cp_receiver_node.cpp.o -o cp_receiver  ../shared/libcp_shared.a /usr/lib/libssl.so /usr/lib/libcrypto.so

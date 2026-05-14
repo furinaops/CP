@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcp_shared.a CMakeFiles/cp_shared.dir/cp_packet.cpp.o CMakeFiles/cp_shared.dir/cp_session.cpp.o CMakeFiles/cp_shared.dir/cp_crypto.cpp.o CMakeFiles/cp_shared.dir/cp_config.cpp.o
+/usr/bin/ranlib libcp_shared.a
