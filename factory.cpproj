@@ -1,5 +1,5 @@
 server:
-  host: "0.0.0.0"
+  host: "0.0.0.0" //it's GLOBAL, point it to local if unsure
   port: 9000
 
 session:
