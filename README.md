@@ -4,7 +4,7 @@ CP is a high-performance, lightweight communication protocol built from scratch,
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Quick Overview](#quick-overview)
 - [Key Features](#key-features)
@@ -18,17 +18,17 @@ CP is a high-performance, lightweight communication protocol built from scratch,
 
 ---
 
-## 🎯 Quick Overview
+##  Quick Overview
 
 Think of CP as a **walkie-talkie system for AI agents**:
-- **Sender (Initiator)** 📤 - One agent that starts conversations and sends commands
-- **Receiver (Responder)** 📥 - Another agent that listens and responds to commands
-- **Trigger Words** 🔑 - Special keywords that tell receivers what action to take (e.g., "MOVE", "STOP", "STATUS")
-- **Checksums** ✅ - Built-in verification to ensure messages arrive correctly
+- **Sender (Initiator)**  - One agent that starts conversations and sends commands
+- **Receiver (Responder)**  - Another agent that listens and responds to commands
+- **Trigger Words**  - Special keywords that tell receivers what action to take (e.g., "MOVE", "STOP", "STATUS")
+- **Checksums** - Built-in verification to ensure messages arrive correctly
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 | Feature | Description |
 |---------|-------------|
@@ -41,7 +41,7 @@ Think of CP as a **walkie-talkie system for AI agents**:
 
 ---
 
-## 📦 Prerequisites
+##  Prerequisites
 
 ### System Requirements
 - **Operating System:** Linux, macOS, or Windows (with WSL2)
@@ -96,7 +96,7 @@ openssl version
 
 ---
 
-## 🚀 Installation Guide
+##  Installation Guide
 
 ### Step 1: Clone the Repository
 
@@ -148,11 +148,11 @@ Scanning dependencies of target cp_shared
 [100%] Built target cp_receiver
 ```
 
-✅ **Success!** You now have compiled binaries ready to run.
+ **Success!** You now have compiled binaries ready to run.
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 The system is configured via the `factory.cpproj` file. Here's what each section means:
 
@@ -186,7 +186,7 @@ agents:                        # Define your agents here
       - RESET                  # Can receive RESET commands
 ```
 
-### 🔧 Customizing Configuration
+###  Customizing Configuration
 
 To use your own configuration:
 
@@ -324,7 +324,7 @@ SENDER                          RECEIVER
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Problem: "Binary not found at build/sender/cp_sender"
 
@@ -405,27 +405,6 @@ brew install gcc
 ./sender.py
 ```
 
----
-
-## 📚 Next Steps
-
-### Beginners 🌱
-1. ✅ Run the sender and receiver successfully
-2. 📝 Modify `factory.cpproj` to add your own triggers
-3. 🔧 Experiment with different messages
-4. 📖 Read the source code in `sender/` and `receiver/`
-
-### Intermediate 📈
-1. 🏗️ Build a custom trigger handler for your use case
-2. 🔐 Enable encryption for secure agent communication
-3. 📊 Log messages to understand protocol flow
-4. 🧪 Write unit tests for protocol validation
-
-### Advanced 🚀
-1. 🌐 Implement multi-agent system (3+ agents)
-2. ⚡ Optimize for production-scale throughput
-3. 🛡️ Add authentication and authorization
-4. 📡 Deploy across multiple machines/networks
 
 ---
 
@@ -438,7 +417,7 @@ brew install gcc
 
 ---
 
-## 📞 Getting Help
+##  Getting Help
 
 If you encounter issues:
 
@@ -455,17 +434,8 @@ If you encounter issues:
 
 ---
 
-## 📄 License
+##  License
 
 This project is open source. See LICENSE file for details.
 
 ---
-
-## 🎓 Learn More
-
-- **C++17 Binary Protocols:** Understanding how data is encoded efficiently
-- **Socket Programming:** How sender and receiver communicate over network
-- **CRC32 Checksums:** Error detection in data transmission
-- **Agent-Based Systems:** Multi-agent communication patterns
-
-Happy coding! 🚀
